@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  # ========================================
+  # 🐬 MySQL Database Service
+  # ========================================
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root       # ✅ Set root password
+    ports:
+      - "3306:3306"                   # ✅ Expose MySQL port for local use
+    volumes:
+      - mysql_data:/var/lib/mysql     # ✅ Persistent MySQL data
+    networks:
+      - springnet                     # ✅ Shared network for app-to-db communication
+    restart: always                   # ✅ Keep DB running even after system reboot
+
+  # ========================================
+  # 🌱 Spring Boot Application
+  # ========================================
+  authservice:
+    image: authservice                # ✅ Your built app image
+    container_name: authservice
+    depends_on:
+      - mysql                         # ✅ Wait for MySQL before starting
+    ports:
+      - "8080:8080"                   # ✅ Map container port to host
+    networks:
+      - springnet                     # ✅ Same network as MySQL
+    restart: on-failure               # ✅ Auto-restart app on crash or failure
+
+    # ✅ Optional — verify the Spring Boot app is healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8085/actuator/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+# ========================================
+# 🌐 Define shared custom network
+# ========================================
+networks:
+  springnet:
+    driver: bridge                    # ✅ Creates isolated network between containers
+
+# ========================================
+# 💾 Named volume for persistent MySQL data
+# ========================================
+volumes:
+  mysql_data:
