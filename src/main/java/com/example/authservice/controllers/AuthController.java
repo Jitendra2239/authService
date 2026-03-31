@@ -1,74 +1,72 @@
 package com.example.authservice.controllers;
 
-
-import com.example.authservice.dtos.*;
+import com.example.authservice.dtos.AuthResponse;
+import com.example.authservice.dtos.LoginRequest;
+import com.example.authservice.dtos.RefreshTokenRequest;
+import com.example.authservice.dtos.RegisterRequest;
 import com.example.authservice.services.AuthService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.util.LinkedMultiValueMap;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/v1/auth")
+@RequiredArgsConstructor
 public class AuthController {
-    private AuthService authService;
 
-    public AuthController(AuthService authService) {
-        this.authService = authService;
+    private final AuthService authService;
+
+
+    @PostMapping("/register")
+    public ResponseEntity<String> register(@RequestBody RegisterRequest request) {
+        return ResponseEntity.ok(authService.register(request));
     }
 
-    @PostMapping("/sign_up")
-    public ResponseEntity<SignUpResponseDto> signUp(@RequestBody SignUpRequestDto request) {
-        SignUpResponseDto response = new SignUpResponseDto();
-        try {
-            if (authService.signUp(request.getEmail(), request.getPassword())) {
-                response.setRequestStatus(RequestStatus.SUCCESS);
-            } else {
-                response.setRequestStatus(RequestStatus.FAILURE);
-            }
-
-            return new ResponseEntity<>(response, HttpStatus.OK);
-        } catch (Exception e) {
-            response.setRequestStatus(RequestStatus.FAILURE);
-            return new ResponseEntity<>(response, HttpStatus.CONFLICT);
-        }
-
-    }
 
     @PostMapping("/login")
-    public ResponseEntity<LoginResponseDto> login(@RequestBody LoginRequestDto request) {
-        try {
-            String token = authService.login(request.getEmail(), request.getPassword());
-            LoginResponseDto loginDto = new LoginResponseDto();
-            loginDto.setRequestStatus(RequestStatus.SUCCESS);
-            MultiValueMap<String, String> headers = new LinkedMultiValueMap<>();
-            headers.add("AUTH_TOKEN", token);
+    public ResponseEntity<AuthResponse> login(@RequestBody LoginRequest request) {
 
-            ResponseEntity<LoginResponseDto> response = new ResponseEntity<>(
-                    loginDto, headers , HttpStatus.OK
-            );
-            return response;
-        } catch (Exception e) {
-            LoginResponseDto loginDto = new LoginResponseDto();
-            loginDto.setRequestStatus(RequestStatus.FAILURE);
-            ResponseEntity<LoginResponseDto> response = new ResponseEntity<>(
-                    loginDto, null , HttpStatus.BAD_REQUEST
-            );
-            return response;
+        AuthResponse response = authService.login(request);
+        return ResponseEntity.ok(response);
+    }
+
+
+    @GetMapping("/validate")
+    public ResponseEntity<String> validateToken(
+            @RequestHeader("Authorization") String header) {
+
+        String token = header.substring(7);
+
+        boolean isValid = authService.validate(token);
+
+        if (isValid) {
+            return ResponseEntity.ok("Token is valid");
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .body("Invalid token");
         }
     }
-    @GetMapping("/")
-public String hello(){
-        return "Hello World";
-}
-    @GetMapping("/validate")
-    public boolean validate(@RequestParam("token") String token) {
-        System.out.println("Here I am");
-//        return false;
-        return authService.validate(token);
+
+
+    @PostMapping("/logout")
+    public ResponseEntity<String> logout(
+            @RequestHeader("Authorization") String header) {
+
+        String token = header.substring(7);
+
+        authService.logout(token);
+
+        return ResponseEntity.ok("Logged out successfully");
     }
 
 
+    @PostMapping("/refresh")
+    public ResponseEntity<RefreshTokenRequest> refreshToken(
+            @RequestBody RefreshTokenRequest request) {
+
+       RefreshTokenRequest response = authService.refreshToken(request.getRefreshToken());
+
+        return ResponseEntity.ok(response);
+    }
 }
