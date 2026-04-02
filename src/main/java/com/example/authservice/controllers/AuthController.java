@@ -1,9 +1,8 @@
 package com.example.authservice.controllers;
 
-import com.example.authservice.dtos.AuthResponse;
-import com.example.authservice.dtos.LoginRequest;
-import com.example.authservice.dtos.RefreshTokenRequest;
-import com.example.authservice.dtos.RegisterRequest;
+import com.example.authservice.dtos.*;
+import com.example.authservice.exceptions.UserNotFoundException;
+import com.example.authservice.models.AuthUser;
 import com.example.authservice.services.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -19,14 +18,14 @@ public class AuthController {
 
 
     @PostMapping("/register")
-    public ResponseEntity<String> register(@RequestBody RegisterRequest request) {
+    public ResponseEntity<RegisterResponse> register(@RequestBody RegisterRequest request) throws UserNotFoundException {
         return ResponseEntity.ok(authService.register(request));
     }
 
 
     @PostMapping("/login")
     public ResponseEntity<AuthResponse> login(@RequestBody LoginRequest request) {
-
+        System.out.println(authService.login(request));
         AuthResponse response = authService.login(request);
         return ResponseEntity.ok(response);
     }

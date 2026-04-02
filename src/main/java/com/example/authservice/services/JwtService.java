@@ -12,7 +12,7 @@ import java.util.Date;
 @Service
 public class JwtService {
 
-    private final String SECRET = "my-secret-key-my-secret-key";
+    private final String SECRET = "mysuperfgfdhgfjghjhjkvhjlkjlksecretkeymysupersecretkey123456";
 
 
     public String generateToken(AuthUser user) {

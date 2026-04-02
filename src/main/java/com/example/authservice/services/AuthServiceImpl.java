@@ -1,6 +1,7 @@
 package com.example.authservice.services;
 
 import com.example.authservice.dtos.*;
+import com.example.authservice.exceptions.UserNotFoundException;
 import com.example.authservice.models.AuthUser;
 import com.example.authservice.models.Token;
 import com.example.authservice.repositories.AuthUserRepository;
@@ -27,28 +28,66 @@ public class AuthServiceImpl implements AuthService {
     @Value("${user.service.url}")
     private String userServiceUrl;
 
-
     @Override
-    public String register(RegisterRequest request) {
+    public RegisterResponse register(RegisterRequest request) {
 
-        AuthUser authUser = new AuthUser();
-        authUser.setEmail(request.getEmail());
-        authUser.setPassword(passwordEncoder.encode(request.getPassword()));
-        authUser.setRole("ROLE_USER");
-        authUser.setActive(true);
+        RegisterResponse registerResponse = new RegisterResponse();
 
-        authUserRepository.save(authUser);
+        try {
+
+            AuthUser authUser = new AuthUser();
+            authUser.setEmail(request.getEmail());
+            authUser.setPassword(passwordEncoder.encode(request.getPassword()));
+
+            authUser = authUserRepository.save(authUser);
+
+
+            UserResponseDto userResponseDto = restTemplate.postForObject(
+                    userServiceUrl + "/register",
+                    request,
+                    UserResponseDto.class
+            );
+
+            if (userResponseDto == null) {
+                throw new RuntimeException("UserService returned null");
+            }
+
+
+            authUser.setUserId(userResponseDto.getId());
+            authUser.setUsername(userResponseDto.getName());
+            authUser.setPhone(userResponseDto.getPhone());
 
 
 
-        restTemplate.postForObject(
-                userServiceUrl + "/api/users",
-                request,
-                String.class
-        );
 
-        return "";
+            AuthUser savedUser = authUserRepository.save(authUser);
+
+            // 🔹 Step 4: Success Response
+            registerResponse.setEmail(savedUser.getEmail());
+            registerResponse.setPhone(savedUser.getPhone());
+            registerResponse.setUserId(savedUser.getId());
+            registerResponse.setName(savedUser.getUsername());
+            registerResponse.setRequestStatus(RequestStatus.SUCCESS);
+            registerResponse.setMessage("User Registered Successfully");
+
+        } catch (Exception ex) {
+
+            // 🔥 Rollback logic
+            try {
+                // delete auth user if exists
+                authUserRepository.findByEmail(request.getEmail())
+                        .ifPresent(user -> authUserRepository.delete(user));
+            } catch (Exception e) {
+                System.out.println("Rollback failed: " + e.getMessage());
+            }
+
+            registerResponse.setRequestStatus(RequestStatus.FAILURE);
+            registerResponse.setMessage("Registration failed: " + ex.getMessage());
+        }
+
+        return registerResponse;
     }
+
 
 
     @Override

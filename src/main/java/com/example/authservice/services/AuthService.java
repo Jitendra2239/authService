@@ -1,12 +1,14 @@
 package com.example.authservice.services;
 
 import com.example.authservice.dtos.*;
+import com.example.authservice.exceptions.UserNotFoundException;
+import com.example.authservice.models.AuthUser;
 import org.springframework.stereotype.Service;
 
 @Service
 public interface AuthService {
 
-    String register(RegisterRequest request);
+    RegisterResponse register(RegisterRequest request) throws UserNotFoundException;
 
     AuthResponse login(LoginRequest request);
 
