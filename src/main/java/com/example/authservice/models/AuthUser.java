@@ -1,7 +1,10 @@
 package com.example.authservice.models;
 
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import lombok.Data;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -16,7 +19,8 @@ public class AuthUser extends BaseModel{
 
     private String password;
     private  String phone;
-    private String role;
+    @ElementCollection
+    private List<String> roles;
 
     private boolean isActive;
 }

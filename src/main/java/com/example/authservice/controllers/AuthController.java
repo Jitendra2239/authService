@@ -60,12 +60,29 @@ public class AuthController {
     }
 
 
-    @PostMapping("/refresh")
-    public ResponseEntity<RefreshTokenRequest> refreshToken(
+    @PostMapping("/refresh-token")
+    public ResponseEntity<AuthResponse> refreshToken(
             @RequestBody RefreshTokenRequest request) {
-
-       RefreshTokenRequest response = authService.refreshToken(request.getRefreshToken());
-
-        return ResponseEntity.ok(response);
+        return ResponseEntity.ok(
+                authService.refreshToken(request.getRefreshToken()));
     }
+
+
+    @PostMapping("/forgot-password")
+    public ResponseEntity<String> forgotPassword(
+            @RequestBody ForgotPasswordRequest request) {
+
+        authService.forgotPassword(request.getEmail());
+        return ResponseEntity.ok("Reset link sent to email");
+    }
+
+    @PostMapping("/reset-password")
+    public ResponseEntity<String> resetPassword(
+            @RequestBody ResetPasswordRequest request) {
+
+        authService.resetPassword(request);
+        return ResponseEntity.ok("Password reset successful");
+    }
+
+
 }
