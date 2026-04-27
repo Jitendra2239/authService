@@ -1,44 +1,38 @@
 nohup: ignoring input
 [[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example:authService:jar:0.0.1-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: com.mysql:mysql-connector-j:jar -> duplicate declaration of version (?) @ line 68, column 21
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:authservice[0;1m >-----------------------[m
+[[1;34mINFO[m] [1m----------------------< [0;36mcom.example:authService[0;1m >-----------------------[m
 [[1;34mINFO[m] [1mBuilding authservice 0.0.1-SNAPSHOT[m
 [[1;34mINFO[m]   from pom.xml
 [[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m>>> [0;32mspring-boot:3.5.0:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mauthservice[0;1m >>>[m
+[[1;34mINFO[m] [1m>>> [0;32mspring-boot:3.3.3:run[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36mauthService[0;1m >>>[m
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:resources[m [1m(default-resources)[m @ [36mauthservice[0;1m ---[m
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:resources[m [1m(default-resources)[m @ [36mauthService[0;1m ---[m
 [[1;34mINFO[m] Copying 1 resource from src/main/resources to target/classes
 [[1;34mINFO[m] Copying 0 resource from src/main/resources to target/classes
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mcompiler:3.14.0:compile[m [1m(default-compile)[m @ [36mauthservice[0;1m ---[m
-[[1;34mINFO[m] Recompiling the module because of [1madded or removed source files[m.
-[[1;34mINFO[m] Compiling 20 source files with javac [debug parameters release 17] to target/classes
-[[1;34mINFO[m] /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/authservice/src/main/java/com/example/authservice/repositories/UserRepository.java: Some input files use unchecked or unsafe operations.
-[[1;34mINFO[m] /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/authservice/src/main/java/com/example/authservice/repositories/UserRepository.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:compile[m [1m(default-compile)[m @ [36mauthService[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:testResources[m [1m(default-testResources)[m @ [36mauthservice[0;1m ---[m
+[[1;34mINFO[m] [1m--- [0;32mresources:3.3.1:testResources[m [1m(default-testResources)[m @ [36mauthService[0;1m ---[m
 [[1;34mINFO[m] skip non existing resourceDirectory /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/authservice/src/test/resources
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mcompiler:3.14.0:testCompile[m [1m(default-testCompile)[m @ [36mauthservice[0;1m ---[m
-[[1;34mINFO[m] Recompiling the module because of [1mchanged dependency[m.
-[[1;34mINFO[m] Compiling 1 source file with javac [debug parameters release 17] to target/test-classes
+[[1;34mINFO[m] [1m--- [0;32mcompiler:3.13.0:testCompile[m [1m(default-testCompile)[m @ [36mauthService[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date.
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m<<< [0;32mspring-boot:3.5.0:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mauthservice[0;1m <<<[m
+[[1;34mINFO[m] [1m<<< [0;32mspring-boot:3.3.3:run[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36mauthService[0;1m <<<[m
 [[1;34mINFO[m] 
 [[1;34mINFO[m] 
-[[1;34mINFO[m] [1m--- [0;32mspring-boot:3.5.0:run[m [1m(default-cli)[m @ [36mauthservice[0;1m ---[m
-[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/springframework/boot/spring-boot-buildpack-platform/3.5.0/spring-boot-buildpack-platform-3.5.0.jar
-Progress (1): 2.3/319 kBProgress (1): 5.0/319 kBProgress (1): 7.7/319 kBProgress (1): 10/319 kB Progress (1): 13/319 kBProgress (1): 16/319 kBProgress (1): 19/319 kBProgress (1): 21/319 kBProgress (1): 24/319 kBProgress (1): 27/319 kBProgress (1): 30/319 kBProgress (1): 33/319 kBProgress (1): 36/319 kBProgress (1): 38/319 kBProgress (1): 41/319 kBProgress (1): 44/319 kBProgress (1): 46/319 kBProgress (1): 49/319 kBProgress (1): 52/319 kBProgress (1): 55/319 kBProgress (1): 59/319 kBProgress (1): 63/319 kBProgress (1): 67/319 kBProgress (1): 71/319 kBProgress (1): 74/319 kBProgress (1): 78/319 kBProgress (1): 82/319 kBProgress (1): 86/319 kBProgress (1): 90/319 kBProgress (1): 94/319 kBProgress (1): 98/319 kBProgress (1): 102/319 kBProgress (1): 106/319 kBProgress (1): 111/319 kBProgress (1): 115/319 kBProgress (1): 119/319 kBProgress (1): 123/319 kBProgress (1): 127/319 kBProgress (1): 131/319 kBProgress (1): 135/319 kBProgress (1): 139/319 kBProgress (1): 143/319 kBProgress (1): 147/319 kBProgress (1): 152/319 kBProgress (1): 156/319 kBProgress (1): 160/319 kBProgress (1): 164/319 kBProgress (1): 168/319 kBProgress (1): 172/319 kBProgress (1): 176/319 kBProgress (1): 180/319 kBProgress (1): 184/319 kBProgress (1): 188/319 kBProgress (1): 193/319 kBProgress (1): 197/319 kBProgress (1): 201/319 kBProgress (1): 205/319 kBProgress (1): 209/319 kBProgress (1): 213/319 kBProgress (1): 215/319 kBProgress (1): 219/319 kBProgress (1): 223/319 kBProgress (1): 227/319 kBProgress (1): 232/319 kBProgress (1): 236/319 kBProgress (1): 240/319 kBProgress (1): 244/319 kBProgress (1): 248/319 kBProgress (1): 252/319 kBProgress (1): 256/319 kBProgress (1): 260/319 kBProgress (1): 264/319 kBProgress (1): 268/319 kBProgress (1): 272/319 kBProgress (1): 277/319 kBProgress (1): 281/319 kBProgress (1): 285/319 kBProgress (1): 289/319 kBProgress (1): 293/319 kBProgress (1): 297/319 kBProgress (1): 301/319 kBProgress (1): 305/319 kBProgress (1): 309/319 kBProgress (1): 313/319 kBProgress (1): 318/319 kBProgress (1): 319 kB                        Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/springframework/boot/spring-boot-buildpack-platform/3.5.0/spring-boot-buildpack-platform-3.5.0.jar[90m (319 kB at 136 kB/s)[0m
-[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/httpcomponents/client5/httpclient5/5.4.4/httpclient5-5.4.4.jar
-[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/springframework/boot/spring-boot-loader-tools/3.5.0/spring-boot-loader-tools-3.5.0.jar
-[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0mio/micrometer/micrometer-observation/1.14.7/micrometer-observation-1.14.7.jar
-[90mDownloading from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0mio/micrometer/micrometer-commons/1.14.7/micrometer-commons-1.14.7.jar
-Progress (1): 7.7/912 kBProgress (1): 16/912 kB Progress (1): 24/912 kBProgress (1): 32/912 kBProgress (1): 40/912 kBProgress (1): 49/912 kBProgress (1): 57/912 kBProgress (1): 65/912 kBProgress (1): 73/912 kBProgress (1): 81/912 kBProgress (1): 90/912 kBProgress (1): 98/912 kBProgress (1): 106/912 kBProgress (1): 114/912 kBProgress (1): 122/912 kBProgress (1): 131/912 kBProgress (1): 139/912 kBProgress (1): 147/912 kBProgress (1): 155/912 kBProgress (1): 163/912 kBProgress (1): 172/912 kBProgress (1): 180/912 kBProgress (1): 188/912 kBProgress (1): 196/912 kBProgress (1): 204/912 kBProgress (1): 213/912 kBProgress (1): 221/912 kBProgress (1): 229/912 kBProgress (1): 237/912 kBProgress (1): 245/912 kBProgress (1): 253/912 kBProgress (1): 262/912 kBProgress (1): 270/912 kBProgress (1): 278/912 kBProgress (1): 286/912 kBProgress (1): 294/912 kBProgress (1): 303/912 kBProgress (1): 311/912 kBProgress (1): 319/912 kBProgress (1): 327/912 kBProgress (1): 335/912 kBProgress (1): 344/912 kBProgress (1): 352/912 kBProgress (1): 360/912 kBProgress (1): 368/912 kBProgress (1): 376/912 kBProgress (1): 385/912 kBProgress (1): 393/912 kBProgress (1): 401/912 kBProgress (1): 409/912 kBProgress (1): 417/912 kBProgress (1): 426/912 kBProgress (1): 434/912 kBProgress (1): 442/912 kBProgress (1): 450/912 kBProgress (1): 458/912 kBProgress (1): 466/912 kBProgress (1): 475/912 kBProgress (1): 483/912 kBProgress (1): 491/912 kBProgress (1): 499/912 kBProgress (1): 507/912 kBProgress (1): 516/912 kBProgress (1): 524/912 kBProgress (1): 532/912 kBProgress (1): 540/912 kBProgress (1): 548/912 kBProgress (1): 557/912 kBProgress (1): 565/912 kBProgress (1): 573/912 kBProgress (2): 573/912 kB | 2.3/75 kBProgress (2): 573/912 kB | 5.0/75 kBProgress (2): 573/912 kB | 7.7/75 kBProgress (2): 573/912 kB | 10/75 kB Progress (2): 581/912 kB | 10/75 kBProgress (2): 589/912 kB | 10/75 kBProgress (2): 589/912 kB | 14/75 kBProgress (3): 589/912 kB | 14/75 kB | 2.3/466 kBProgress (3): 589/912 kB | 14/75 kB | 5.0/466 kBProgress (3): 589/912 kB | 14/75 kB | 7.7/466 kBProgress (3): 589/912 kB | 16/75 kB | 7.7/466 kBProgress (3): 589/912 kB | 16/75 kB | 10/466 kB Progress (3): 598/912 kB | 16/75 kB | 10/466 kBProgress (3): 606/912 kB | 16/75 kB | 10/466 kBProgress (3): 606/912 kB | 19/75 kB | 10/466 kBProgress (3): 606/912 kB | 22/75 kB | 10/466 kBProgress (3): 606/912 kB | 22/75 kB | 13/466 kBProgress (3): 606/912 kB | 25/75 kB | 13/466 kBProgress (3): 606/912 kB | 25/75 kB | 16/466 kBProgress (3): 614/912 kB | 25/75 kB | 16/466 kBProgress (3): 622/912 kB | 25/75 kB | 16/466 kBProgress (3): 622/912 kB | 25/75 kB | 19/466 kBProgress (3): 630/912 kB | 25/75 kB | 19/466 kBProgress (3): 638/912 kB | 25/75 kB | 19/466 kBProgress (3): 638/912 kB | 27/75 kB | 19/466 kBProgress (3): 638/912 kB | 27/75 kB | 21/466 kBProgress (3): 638/912 kB | 30/75 kB | 21/466 kBProgress (3): 647/912 kB | 30/75 kB | 21/466 kBProgress (3): 647/912 kB | 30/75 kB | 24/466 kBProgress (3): 655/912 kB | 30/75 kB | 24/466 kBProgress (3): 663/912 kB | 30/75 kB | 24/466 kBProgress (3): 671/912 kB | 30/75 kB | 24/466 kBProgress (3): 671/912 kB | 30/75 kB | 27/466 kBProgress (3): 671/912 kB | 33/75 kB | 27/466 kBProgress (3): 671/912 kB | 33/75 kB | 30/466 kBProgress (3): 671/912 kB | 36/75 kB | 30/466 kBProgress (3): 679/912 kB | 36/75 kB | 30/466 kBProgress (3): 688/912 kB | 36/75 kB | 30/466 kBProgress (3): 696/912 kB | 36/75 kB | 30/466 kBProgress (3): 704/912 kB | 36/75 kB | 30/466 kBProgress (3): 704/912 kB | 36/75 kB | 33/466 kBProgress (3): 704/912 kB | 38/75 kB | 33/466 kBProgress (3): 704/912 kB | 38/75 kB | 36/466 kBProgress (3): 712/912 kB | 38/75 kB | 36/466 kBProgress (3): 720/912 kB | 38/75 kB | 36/466 kBProgress (4): 720/912 kB | 38/75 kB | 36/466 kB | 2.3/48 kBProgress (4): 720/912 kB | 38/75 kB | 36/466 kB | 5.0/48 kBProgress (4): 720/912 kB | 38/75 kB | 36/466 kB | 7.4/48 kBProgress (4): 720/912 kB | 41/75 kB | 36/466 kB | 7.4/48 kBProgress (4): 720/912 kB | 41/75 kB | 38/466 kB | 7.4/48 kBProgress (4): 720/912 kB | 41/75 kB | 38/466 kB | 10/48 kB Progress (4): 720/912 kB | 44/75 kB | 38/466 kB | 10/48 kBProgress (4): 720/912 kB | 44/75 kB | 41/466 kB | 10/48 kBProgress (4): 720/912 kB | 47/75 kB | 41/466 kB | 10/48 kBProgress (4): 720/912 kB | 47/75 kB | 41/466 kB | 13/48 kBProgress (4): 720/912 kB | 47/75 kB | 44/466 kB | 13/48 kBProgress (4): 720/912 kB | 49/75 kB | 44/466 kB | 13/48 kBProgress (4): 720/912 kB | 49/75 kB | 44/466 kB | 16/48 kBProgress (4): 720/912 kB | 49/75 kB | 46/466 kB | 16/48 kBProgress (4): 720/912 kB | 49/75 kB | 46/466 kB | 18/48 kBProgress (4): 720/912 kB | 52/75 kB | 46/466 kB | 18/48 kBProgress (4): 720/912 kB | 52/75 kB | 49/466 kB | 18/48 kBProgress (4): 720/912 kB | 52/75 kB | 52/466 kB | 18/48 kBProgress (4): 720/912 kB | 55/75 kB | 52/466 kB | 18/48 kBProgress (4): 720/912 kB | 55/75 kB | 52/466 kB | 21/48 kBProgress (4): 720/912 kB | 55/75 kB | 55/466 kB | 21/48 kBProgress (4): 720/912 kB | 55/75 kB | 55/466 kB | 24/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 24/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 27/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 29/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 32/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 35/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 38/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 40/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 43/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 46/48 kBProgress (4): 720/912 kB | 55/75 kB | 59/466 kB | 48 kB   Progress (4): 720/912 kB | 59/75 kB | 59/466 kB | 48 kBProgress (4): 729/912 kB | 59/75 kB | 59/466 kB | 48 kBProgress (4): 737/912 kB | 59/75 kB | 59/466 kB | 48 kBProgress (4): 745/912 kB | 59/75 kB | 59/466 kB | 48 kBProgress (4): 753/912 kB | 59/75 kB | 59/466 kB | 48 kBProgress (4): 761/912 kB | 59/75 kB | 59/466 kB | 48 kBProgress (4): 770/912 kB | 59/75 kB | 59/466 kB | 48 kBProgress (4): 770/912 kB | 59/75 kB | 63/466 kB | 48 kBProgress (4): 778/912 kB | 59/75 kB | 63/466 kB | 48 kBProgress (4): 778/912 kB | 59/75 kB | 67/466 kB | 48 kBProgress (4): 786/912 kB | 59/75 kB | 67/466 kB | 48 kBProgress (4): 786/912 kB | 59/75 kB | 71/466 kB | 48 kBProgress (4): 786/912 kB | 59/75 kB | 75/466 kB | 48 kBProgress (4): 786/912 kB | 63/75 kB | 75/466 kB | 48 kBProgress (4): 786/912 kB | 67/75 kB | 75/466 kB | 48 kBProgress (4): 794/912 kB | 67/75 kB | 75/466 kB | 48 kBProgress (4): 802/912 kB | 67/75 kB | 75/466 kB | 48 kBProgress (4): 811/912 kB | 67/75 kB | 75/466 kB | 48 kBProgress (4): 819/912 kB | 67/75 kB | 75/466 kB | 48 kBProgress (4): 819/912 kB | 71/75 kB | 75/466 kB | 48 kBProgress (4): 819/912 kB | 71/75 kB | 79/466 kB | 48 kBProgress (4): 827/912 kB | 71/75 kB | 79/466 kB | 48 kBProgress (4): 827/912 kB | 75 kB | 79/466 kB | 48 kB   Progress (4): 827/912 kB | 75 kB | 83/466 kB | 48 kBProgress (4): 835/912 kB | 75 kB | 83/466 kB | 48 kBProgress (4): 843/912 kB | 75 kB | 83/466 kB | 48 kBProgress (4): 851/912 kB | 75 kB | 83/466 kB | 48 kBProgress (4): 851/912 kB | 75 kB | 87/466 kB | 48 kBProgress (4): 860/912 kB | 75 kB | 87/466 kB | 48 kBProgress (4): 868/912 kB | 75 kB | 87/466 kB | 48 kBProgress (4): 876/912 kB | 75 kB | 87/466 kB | 48 kBProgress (4): 884/912 kB | 75 kB | 87/466 kB | 48 kBProgress (4): 884/912 kB | 75 kB | 92/466 kB | 48 kBProgress (4): 884/912 kB | 75 kB | 96/466 kB | 48 kBProgress (4): 892/912 kB | 75 kB | 96/466 kB | 48 kBProgress (4): 901/912 kB | 75 kB | 96/466 kB | 48 kBProgress (4): 901/912 kB | 75 kB | 100/466 kB | 48 kBProgress (4): 909/912 kB | 75 kB | 100/466 kB | 48 kBProgress (4): 912 kB | 75 kB | 100/466 kB | 48 kB    Progress (4): 912 kB | 75 kB | 104/466 kB | 48 kBProgress (4): 912 kB | 75 kB | 108/466 kB | 48 kBProgress (4): 912 kB | 75 kB | 112/466 kB | 48 kBProgress (4): 912 kB | 75 kB | 116/466 kB | 48 kBProgress (4): 912 kB | 75 kB | 120/466 kB | 48 kBProgress (4): 912 kB | 75 kB | 122/466 kB | 48 kBProgress (4): 912 kB | 75 kB | 126/466 kB | 48 kBProgress (4): 912 kB | 75 kB | 131/466 kB | 48 kB                                                 Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0mio/micrometer/micrometer-commons/1.14.7/micrometer-commons-1.14.7.jar[90m (48 kB at 57 kB/s)[0m
-Progress (3): 912 kB | 75 kB | 135/466 kBProgress (3): 912 kB | 75 kB | 139/466 kBProgress (3): 912 kB | 75 kB | 143/466 kBProgress (3): 912 kB | 75 kB | 147/466 kBProgress (3): 912 kB | 75 kB | 151/466 kBProgress (3): 912 kB | 75 kB | 155/466 kB                                         Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/apache/httpcomponents/client5/httpclient5/5.4.4/httpclient5-5.4.4.jar[90m (912 kB at 891 kB/s)[0m
-Progress (2): 75 kB | 159/466 kB                                Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0mio/micrometer/micrometer-observation/1.14.7/micrometer-observation-1.14.7.jar[90m (75 kB at 73 kB/s)[0m
-Progress (1): 163/466 kBProgress (1): 167/466 kBProgress (1): 172/466 kBProgress (1): 176/466 kBProgress (1): 180/466 kBProgress (1): 184/466 kBProgress (1): 188/466 kBProgress (1): 192/466 kBProgress (1): 196/466 kBProgress (1): 200/466 kBProgress (1): 204/466 kBProgress (1): 206/466 kBProgress (1): 210/466 kBProgress (1): 215/466 kBProgress (1): 219/466 kBProgress (1): 223/466 kBProgress (1): 227/466 kBProgress (1): 231/466 kBProgress (1): 235/466 kBProgress (1): 239/466 kBProgress (1): 243/466 kBProgress (1): 247/466 kBProgress (1): 251/466 kBProgress (1): 256/466 kBProgress (1): 260/466 kBProgress (1): 264/466 kBProgress (1): 268/466 kBProgress (1): 272/466 kBProgress (1): 276/466 kBProgress (1): 280/466 kBProgress (1): 284/466 kBProgress (1): 287/466 kBProgress (1): 291/466 kBProgress (1): 295/466 kBProgress (1): 299/466 kBProgress (1): 303/466 kBProgress (1): 307/466 kBProgress (1): 311/466 kBProgress (1): 315/466 kBProgress (1): 319/466 kBProgress (1): 324/466 kBProgress (1): 328/466 kBProgress (1): 332/466 kBProgress (1): 336/466 kBProgress (1): 340/466 kBProgress (1): 344/466 kBProgress (1): 348/466 kBProgress (1): 352/466 kBProgress (1): 356/466 kBProgress (1): 360/466 kBProgress (1): 365/466 kBProgress (1): 369/466 kBProgress (1): 373/466 kBProgress (1): 377/466 kBProgress (1): 381/466 kBProgress (1): 385/466 kBProgress (1): 389/466 kBProgress (1): 393/466 kBProgress (1): 397/466 kBProgress (1): 401/466 kBProgress (1): 406/466 kBProgress (1): 410/466 kBProgress (1): 414/466 kBProgress (1): 418/466 kBProgress (1): 422/466 kBProgress (1): 426/466 kBProgress (1): 430/466 kBProgress (1): 434/466 kBProgress (1): 438/466 kBProgress (1): 442/466 kBProgress (1): 446/466 kBProgress (1): 451/466 kBProgress (1): 455/466 kBProgress (1): 459/466 kBProgress (1): 463/466 kBProgress (1): 466 kB                        Downloaded[90m from [0mcentral[90m: https://repo.maven.apache.org/maven2/[0morg/springframework/boot/spring-boot-loader-tools/3.5.0/spring-boot-loader-tools-3.5.0.jar[90m (466 kB at 326 kB/s)[0m
+[[1;34mINFO[m] [1m--- [0;32mspring-boot:3.3.3:run[m [1m(default-cli)[m @ [36mauthService[0;1m ---[m
 [[1;34mINFO[m] Attaching agents: []
 
   .   ____          _            __ _ _
@@ -48,189 +42,137 @@ Progress (1): 163/466 kBProgress (1): 167/466 kBProgress (1): 172/466 kBProgr
   '  |____| .__|_| |_|_| |_\__, | / / / /
  =========|_|==============|___/=/_/_/_/
 
- :: Spring Boot ::                (v3.5.0)
+ :: Spring Boot ::                (v3.3.3)
 
-2026-03-21T18:47:55.243+05:30  INFO 27843 --- [authservice] [  restartedMain] c.e.authservice.AuthserviceApplication   : Starting AuthserviceApplication using Java 17.0.16 with PID 27843 (/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/authservice/target/classes started by jitendra in /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/authservice)
-2026-03-21T18:47:55.246+05:30  INFO 27843 --- [authservice] [  restartedMain] c.e.authservice.AuthserviceApplication   : No active profile set, falling back to 1 default profile: "default"
-2026-03-21T18:47:55.295+05:30  INFO 27843 --- [authservice] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-03-21T18:47:55.295+05:30  INFO 27843 --- [authservice] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-03-21T18:47:56.055+05:30  INFO 27843 --- [authservice] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-21T18:47:56.124+05:30  INFO 27843 --- [authservice] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 2 JPA repository interfaces.
-2026-03-21T18:47:56.782+05:30  INFO 27843 --- [authservice] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2026-03-21T18:47:56.797+05:30  INFO 27843 --- [authservice] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-21T18:47:56.797+05:30  INFO 27843 --- [authservice] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
-2026-03-21T18:47:56.848+05:30  INFO 27843 --- [authservice] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2026-03-21T18:47:56.849+05:30  INFO 27843 --- [authservice] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1552 ms
-2026-03-21T18:47:57.059+05:30  INFO 27843 --- [authservice] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-21T18:47:57.125+05:30  INFO 27843 --- [authservice] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
-2026-03-21T18:47:57.170+05:30  INFO 27843 --- [authservice] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-21T18:47:57.409+05:30  INFO 27843 --- [authservice] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-21T18:47:57.434+05:30  INFO 27843 --- [authservice] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-03-21T18:47:58.553+05:30  WARN 27843 --- [authservice] [  restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
-2026-03-21T18:47:58.553+05:30 ERROR 27843 --- [authservice] [  restartedMain] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+2026-04-26T20:33:02.836+05:30  INFO 17383 --- [auth-service] [  restartedMain] c.e.authservice.AuthServiceApplication   : Starting AuthServiceApplication using Java 17.0.16 with PID 17383 (/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/authservice/target/classes started by jitendra in /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/authservice)
+2026-04-26T20:33:02.838+05:30  INFO 17383 --- [auth-service] [  restartedMain] c.e.authservice.AuthServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-04-26T20:33:02.871+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8092
+2026-04-26T20:33:02.871+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=auth-service, profiles=[default], label=null, version=5f65aad33b54e4d2b9a90c3557fc0a5641f31103, state=null
+2026-04-26T20:33:02.872+05:30  INFO 17383 --- [auth-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-26T20:33:02.872+05:30  INFO 17383 --- [auth-service] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-26T20:33:03.662+05:30  INFO 17383 --- [auth-service] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-26T20:33:03.795+05:30  INFO 17383 --- [auth-service] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124 ms. Found 4 JPA repository interfaces.
+2026-04-26T20:33:04.117+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8aadbd69-a314-3cf4-b52e-3264d30ea2a6
+2026-04-26T20:33:04.275+05:30  WARN 17383 --- [auth-service] [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-04-26T20:33:04.276+05:30  WARN 17383 --- [auth-service] [  restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2026-04-26T20:33:04.600+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8095 (http)
+2026-04-26T20:33:04.614+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-26T20:33:04.614+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2026-04-26T20:33:04.659+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-26T20:33:04.660+05:30  INFO 17383 --- [auth-service] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1786 ms
+2026-04-26T20:33:04.820+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-26T20:33:04.890+05:30  INFO 17383 --- [auth-service] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-04-26T20:33:04.925+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-26T20:33:05.173+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-26T20:33:05.196+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-26T20:33:05.458+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37a6e4f1
+2026-04-26T20:33:05.461+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-26T20:33:05.535+05:30  WARN 17383 --- [auth-service] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-26T20:33:06.486+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: alter table token modify column access_token TEXT
+Hibernate: alter table token modify column refresh_token TEXT
+2026-04-26T20:33:06.619+05:30  INFO 17383 --- [auth-service] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-26T20:33:06.841+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-26T20:33:07.368+05:30  WARN 17383 --- [auth-service] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-26T20:33:07.434+05:30  WARN 17383 --- [auth-service] [  restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-2026-03-21T18:47:58.556+05:30  WARN 27843 --- [authservice] [  restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+Using generated security password: 397ab486-4146-4573-85ab-cba064f82f37
 
-org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
-	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:336) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
-	at com.example.authservice.AuthserviceApplication.main(AuthserviceApplication.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.0.jar:3.5.0]
-Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:139) ~[HikariCP-6.3.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:368) ~[HikariCP-6.3.0.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:205) ~[HikariCP-6.3.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:483) ~[HikariCP-6.3.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:571) ~[HikariCP-6.3.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:101) ~[HikariCP-6.3.0.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-6.3.0.jar:na]
-	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:483) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	... 40 common frames omitted
-Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
-
-The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:142) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:961) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	... 53 common frames omitted
-Caused by: java.net.UnknownHostException: mysql: Temporary failure in name resolution
-	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method) ~[na:na]
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934) ~[na:na]
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543) ~[na:na]
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385) ~[na:na]
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306) ~[na:na]
-	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:121) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53) ~[mysql-connector-j-9.2.0.jar:9.2.0]
-	... 56 common frames omitted
-
-2026-03-21T18:47:58.563+05:30 ERROR 27843 --- [authservice] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-2026-03-21T18:47:58.564+05:30  WARN 27843 --- [authservice] [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-2026-03-21T18:47:58.569+05:30  INFO 27843 --- [authservice] [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2026-03-21T18:47:58.583+05:30  INFO 27843 --- [authservice] [  restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2026-03-21T18:47:58.603+05:30 ERROR 27843 --- [authservice] [  restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.7.jar:6.2.7]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) ~[spring-boot-3.5.0.jar:3.5.0]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) ~[spring-boot-3.5.0.jar:3.5.0]
-	at com.example.authservice.AuthserviceApplication.main(AuthserviceApplication.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.0.jar:3.5.0]
-Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873) ~[spring-beans-6.2.7.jar:6.2.7]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822) ~[spring-beans-6.2.7.jar:6.2.7]
-	... 20 common frames omitted
-Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:186) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:408) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.15.Final.jar:6.6.15.Final]
-	... 35 common frames omitted
-
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
-[[1;34mINFO[m] Total time:  11.741 s
-[[1;34mINFO[m] Finished at: 2026-03-21T18:47:58+05:30
-[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+2026-04-26T20:33:07.444+05:30  INFO 17383 --- [auth-service] [  restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-26T20:33:07.968+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-04-26T20:33:08.279+05:30  INFO 17383 --- [auth-service] [  restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-04-26T20:33:08.334+05:30  WARN 17383 --- [auth-service] [  restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-26T20:33:08.398+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-26T20:33:08.435+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-26T20:33:08.439+05:30  INFO 17383 --- [auth-service] [  restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T20:33:08.448+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-26T20:33:08.448+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-26T20:33:08.448+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-26T20:33:08.448+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-26T20:33:08.448+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-26T20:33:08.448+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-26T20:33:08.448+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-26T20:33:08.685+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-26T20:33:08.687+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-26T20:33:08.689+05:30  INFO 17383 --- [auth-service] [  restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-26T20:33:08.691+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1777215788690 with initial instances count: 2
+2026-04-26T20:33:08.694+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTH-SERVICE with eureka with status UP
+2026-04-26T20:33:08.695+05:30  INFO 17383 --- [auth-service] [  restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1777215788695, current=UP, previous=STARTING]
+2026-04-26T20:33:08.697+05:30  INFO 17383 --- [auth-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/10.96.131.185:auth-service:8095: registering service...
+2026-04-26T20:33:08.715+05:30  INFO 17383 --- [auth-service] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8095 (http) with context path '/'
+2026-04-26T20:33:08.716+05:30  INFO 17383 --- [auth-service] [  restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8095
+2026-04-26T20:33:08.747+05:30  INFO 17383 --- [auth-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH-SERVICE/10.96.131.185:auth-service:8095 - registration status: 204
+2026-04-26T20:33:08.891+05:30  INFO 17383 --- [auth-service] [  restartedMain] c.e.authservice.AuthServiceApplication   : Started AuthServiceApplication in 8.497 seconds (process running for 8.912)
+2026-04-26T20:38:08.451+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T20:42:46.377+05:30  INFO 17383 --- [auth-service] [nio-8095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-26T20:42:46.377+05:30  INFO 17383 --- [auth-service] [nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-26T20:42:46.381+05:30  INFO 17383 --- [auth-service] [nio-8095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: select au1_0.id,au1_0.email,au1_0.is_active,au1_0.password,au1_0.phone,au1_0.user_id,au1_0.username from auth_user au1_0 where au1_0.email=?
+Hibernate: select r1_0.auth_user_id,r1_0.roles from auth_user_roles r1_0 where r1_0.auth_user_id=?
+Hibernate: insert into refresh_tokens (device_id,device_name,expiry_date,revoked,token,user_id) values (?,?,?,?,?,?)
+Hibernate: insert into token (access_token,email,expiry_date,is_revoked,refresh_token) values (?,?,?,?,?)
+AuthResponse(accessToken=eyJhbGciOiJIUzM4NCJ9.eyJyb2xlcyI6WyJVU0VSIiwiQURNSU4iXSwidXNlcklkIjoyLCJlbWFpbCI6ImtqaXRlbmRyYTE4OTVAZ21haWwuY29tIiwic3ViIjoia2ppdGVuZHJhMTg5NUBnbWFpbC5jb20iLCJpYXQiOjE3NzcyMTYzNjYsImV4cCI6MTc3NzIxOTk2Nn0.rWJcTgEFFQDvpb3y3B6kCVcGEkM5zhh2PB0X4S81HltKc1oAcEChjTp_3jGeiUmt, refreshToken=bc8d0af5-513e-4d45-a506-df29dfde75b1)
+Hibernate: select au1_0.id,au1_0.email,au1_0.is_active,au1_0.password,au1_0.phone,au1_0.user_id,au1_0.username from auth_user au1_0 where au1_0.email=?
+Hibernate: insert into refresh_tokens (device_id,device_name,expiry_date,revoked,token,user_id) values (?,?,?,?,?,?)
+Hibernate: insert into token (access_token,email,expiry_date,is_revoked,refresh_token) values (?,?,?,?,?)
+2026-04-26T20:43:08.456+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T20:48:08.457+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T20:53:08.458+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T20:58:08.460+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:00:00.009+05:30  INFO 17383 --- [auth-service] [   scheduling-1] c.e.a.configs.TokenCleanupScheduler      : Running token cleanup job...
+Hibernate: delete prt1_0 from password_reset_tokens prt1_0 where prt1_0.expiry_date<?
+2026-04-26T21:00:00.032+05:30  INFO 17383 --- [auth-service] [   scheduling-1] c.e.a.configs.TokenCleanupScheduler      : Deleted 0 expired password reset tokens
+2026-04-26T21:03:08.461+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:08:08.462+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:13:08.463+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:18:08.464+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:23:08.467+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:28:08.468+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:33:08.470+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:38:08.472+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select au1_0.id,au1_0.email,au1_0.is_active,au1_0.password,au1_0.phone,au1_0.user_id,au1_0.username from auth_user au1_0 where au1_0.email=?
+Hibernate: select r1_0.auth_user_id,r1_0.roles from auth_user_roles r1_0 where r1_0.auth_user_id=?
+Hibernate: insert into refresh_tokens (device_id,device_name,expiry_date,revoked,token,user_id) values (?,?,?,?,?,?)
+Hibernate: insert into token (access_token,email,expiry_date,is_revoked,refresh_token) values (?,?,?,?,?)
+AuthResponse(accessToken=eyJhbGciOiJIUzM4NCJ9.eyJyb2xlcyI6WyJVU0VSIiwiQURNSU4iXSwidXNlcklkIjoyLCJlbWFpbCI6ImtqaXRlbmRyYTE4OTVAZ21haWwuY29tIiwic3ViIjoia2ppdGVuZHJhMTg5NUBnbWFpbC5jb20iLCJpYXQiOjE3NzcyMTk5NzksImV4cCI6MTc3NzIyMzU3OX0.V7EWEyz1e2esElWfWvdMNLuMhzmtHP0Y3BxQJOHjdAo71W-9SmTy-daP9c64cIY3, refreshToken=2a237bba-97f7-4829-9a1b-810d34a7d96e)
+Hibernate: select au1_0.id,au1_0.email,au1_0.is_active,au1_0.password,au1_0.phone,au1_0.user_id,au1_0.username from auth_user au1_0 where au1_0.email=?
+Hibernate: insert into refresh_tokens (device_id,device_name,expiry_date,revoked,token,user_id) values (?,?,?,?,?,?)
+Hibernate: insert into token (access_token,email,expiry_date,is_revoked,refresh_token) values (?,?,?,?,?)
+2026-04-26T21:43:08.477+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:48:08.478+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:53:08.480+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T21:58:08.481+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:00:00.002+05:30  INFO 17383 --- [auth-service] [   scheduling-1] c.e.a.configs.TokenCleanupScheduler      : Running token cleanup job...
+Hibernate: delete prt1_0 from password_reset_tokens prt1_0 where prt1_0.expiry_date<?
+2026-04-26T22:00:00.009+05:30  INFO 17383 --- [auth-service] [   scheduling-1] c.e.a.configs.TokenCleanupScheduler      : Deleted 0 expired password reset tokens
+2026-04-26T22:03:08.482+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:08:08.483+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:13:08.486+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:18:08.487+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:23:08.487+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:28:08.491+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:33:08.492+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:38:08.496+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:43:08.497+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+Hibernate: select au1_0.id,au1_0.email,au1_0.is_active,au1_0.password,au1_0.phone,au1_0.user_id,au1_0.username from auth_user au1_0 where au1_0.email=?
+Hibernate: select r1_0.auth_user_id,r1_0.roles from auth_user_roles r1_0 where r1_0.auth_user_id=?
+Hibernate: insert into refresh_tokens (device_id,device_name,expiry_date,revoked,token,user_id) values (?,?,?,?,?,?)
+Hibernate: insert into token (access_token,email,expiry_date,is_revoked,refresh_token) values (?,?,?,?,?)
+AuthResponse(accessToken=eyJhbGciOiJIUzM4NCJ9.eyJyb2xlcyI6WyJVU0VSIiwiQURNSU4iXSwidXNlcklkIjoyLCJlbWFpbCI6ImtqaXRlbmRyYTE4OTVAZ21haWwuY29tIiwic3ViIjoia2ppdGVuZHJhMTg5NUBnbWFpbC5jb20iLCJpYXQiOjE3NzcyMjM3MjgsImV4cCI6MTc3NzIyNzMyOH0.ZvZi4nlS4dn1ywq4NAKhVEyx2RTbMQmFdjte-JqYpzpMqoKCovq2otuWXnxBX83Z, refreshToken=1fed0dca-ae7f-42d6-966e-4dc9c1ca194b)
+Hibernate: select au1_0.id,au1_0.email,au1_0.is_active,au1_0.password,au1_0.phone,au1_0.user_id,au1_0.username from auth_user au1_0 where au1_0.email=?
+Hibernate: insert into refresh_tokens (device_id,device_name,expiry_date,revoked,token,user_id) values (?,?,?,?,?,?)
+Hibernate: insert into token (access_token,email,expiry_date,is_revoked,refresh_token) values (?,?,?,?,?)
+2026-04-26T22:48:08.498+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:53:08.502+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T22:58:08.502+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T23:00:00.002+05:30  INFO 17383 --- [auth-service] [   scheduling-1] c.e.a.configs.TokenCleanupScheduler      : Running token cleanup job...
+Hibernate: delete prt1_0 from password_reset_tokens prt1_0 where prt1_0.expiry_date<?
+2026-04-26T23:00:00.016+05:30  INFO 17383 --- [auth-service] [   scheduling-1] c.e.a.configs.TokenCleanupScheduler      : Deleted 0 expired password reset tokens
+2026-04-26T23:03:08.506+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T23:08:08.510+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T23:13:08.513+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T23:18:08.516+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T23:23:08.518+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-26T23:28:08.527+05:30  INFO 17383 --- [auth-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
